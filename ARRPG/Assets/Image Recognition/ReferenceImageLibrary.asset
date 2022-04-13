@@ -21,7 +21,27 @@ MonoBehaviour:
     m_SerializedTextureGuid:
       m_GuidLow: 3824870290988488744
       m_GuidHigh: 3646057016340488539
-    m_Size: {x: 0.025, y: 0.02583026}
-    m_SpecifySize: 0
-    m_Name: ReferenceImage_Test
+    m_Size: {x: 0.1, y: 0.10332104}
+    m_SpecifySize: 1
+    m_Name: CatCube
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 4943709773303447580
+      m_GuidHigh: 14572547038272171915
+    m_SerializedTextureGuid:
+      m_GuidLow: 2514334873446813455
+      m_GuidHigh: 612206330568784938
+    m_Size: {x: 0.1, y: 0.10332104}
+    m_SpecifySize: 1
+    m_Name: female_genericMesh
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5292107239922705949
+      m_GuidHigh: 16577118860042862722
+    m_SerializedTextureGuid:
+      m_GuidLow: 3581680387575814145
+      m_GuidHigh: 2694591262776698618
+    m_Size: {x: 0.1, y: 0.10332104}
+    m_SpecifySize: 1
+    m_Name: male_genericMesh
     m_Texture: {fileID: 0}
