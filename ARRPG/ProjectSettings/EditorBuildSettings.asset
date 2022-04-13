@@ -9,5 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   m_configObjects:
+    Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: 9e1e5d9b6faeafc448cb42979e1277a8, type: 2}
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: d7fd20481368b114c830953877e5593b, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 2acae24f12b69cf44bf2b52fd9e92e4d, type: 2}
