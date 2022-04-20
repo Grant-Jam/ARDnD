@@ -787,7 +787,6 @@ GameObject:
   - component: {fileID: 1193134486}
   - component: {fileID: 1193134488}
   - component: {fileID: 1193134489}
-  - component: {fileID: 1193134490}
   m_Layer: 0
   m_Name: AR Session Origin
   m_TagString: Untagged
@@ -851,25 +850,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   arObjectsToPlace:
-  - {fileID: 4524621012898649508, guid: f8e3c9a402cc9ec4ab1327b2aa08a3fb, type: 3}
+  - {fileID: 8272943599224061573, guid: 47b41978aba272c47ae5f4a2f7179c61, type: 3}
   - {fileID: 2960395769364084781, guid: 487315f12771eb4459cdd41addea8922, type: 3}
   - {fileID: 3943462370564707210, guid: 1c29f11cb802591458f0351c5c77ba85, type: 3}
   scaleFactor: {x: 0.1, y: 0.1, z: 0.1}
   imageTrackedText: {fileID: 1021189501}
---- !u!114 &1193134490
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1193134485}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b921c8a660905e4ca509e1e50c8c05b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  arCam: {fileID: 281737772}
-  text: {fileID: 386317415}
 --- !u!1 &1303146359
 GameObject:
   m_ObjectHideFlags: 0
