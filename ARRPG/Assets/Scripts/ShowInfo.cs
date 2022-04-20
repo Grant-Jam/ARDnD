@@ -6,19 +6,31 @@ using UnityEngine.XR.ARFoundation;
 public class ShowInfo : MonoBehaviour
 {
     [SerializeField] GameObject infoCanvas;
-    List<ARRaycastHit> hits = new List<ARRaycastHit>();
-    ARRaycastManager raycastManager;
+    private GameObject canvasInstance;
+    [SerializeField] private Transform arCamTransform;
 
     // Start is called before the first frame update
     void Start()
     {
-        GameObject canvasInstance = Instantiate(infoCanvas, transform, false);
-        //raycastManager = GameObject.Find("AR Camera").GetComponent<ARRaycastManager>();
+        canvasInstance = Instantiate(infoCanvas, transform, false);
+        canvasInstance.SetActive(false);
+        arCamTransform = GameObject.Find("AR Camera").transform;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        ToggleInfo();
+    }
+
+    public void ToggleInfo()
+    {
+        float distanceToCam = Vector3.Distance(this.transform.position, arCamTransform.position);
+        Debug.Log("distance: " + distanceToCam);
+        if (distanceToCam < 0.5f)
+        {
+            canvasInstance.SetActive(true);
+        }
+        else canvasInstance.SetActive(false);
     }
 }
