@@ -6,8 +6,9 @@ using UnityEngine.XR.ARFoundation;
 public class ShowInfo : MonoBehaviour
 {
     [SerializeField] GameObject infoCanvas;
+    [SerializeField] float hideDistance;
     private GameObject canvasInstance;
-    [SerializeField] private Transform arCamTransform;
+    private Transform arCamTransform;
 
     // Start is called before the first frame update
     void Start()
@@ -27,7 +28,7 @@ public class ShowInfo : MonoBehaviour
     {
         float distanceToCam = Vector3.Distance(this.transform.position, arCamTransform.position);
         Debug.Log("distance: " + distanceToCam);
-        if (distanceToCam < 0.5f)
+        if (distanceToCam < hideDistance)
         {
             canvasInstance.SetActive(true);
         }
