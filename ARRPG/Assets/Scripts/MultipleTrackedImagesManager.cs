@@ -13,6 +13,7 @@ public class MultipleTrackedImagesManager : MonoBehaviour
     [SerializeField] private Vector3 scaleFactor = new Vector3(0.1f,0.1f,0.1f);
 
     [SerializeField] private Text imageTrackedText;
+    [SerializeField] private Text imageTrackedText2;
 
     private ARTrackedImageManager trackedImageManager;
 
@@ -41,8 +42,6 @@ public class MultipleTrackedImagesManager : MonoBehaviour
         trackedImageManager.trackedImagesChanged -= OnTrackedImagesChanged;
     }
 
-    //private void Dismiss() => welcomePanel.SetActive(false);
-
     void OnTrackedImagesChanged(ARTrackedImagesChangedEventArgs eventArgs)
     {
 
@@ -58,7 +57,7 @@ public class MultipleTrackedImagesManager : MonoBehaviour
 
         foreach (ARTrackedImage trackedImage in eventArgs.removed)
         {
-            arObjects[trackedImage.name].SetActive(false);
+            arObjects[trackedImage.referenceImage.name].SetActive(false);
         }
     }
 
@@ -66,25 +65,34 @@ public class MultipleTrackedImagesManager : MonoBehaviour
     {
         imageTrackedText.text = trackedImage.referenceImage.name;
 
-        AssignGameObject(trackedImage.referenceImage.name, trackedImage.transform.position);
-
+        AssignGameObject(trackedImage.referenceImage.name, trackedImage.transform.position, trackedImage.transform.rotation);
     }
 
-    void AssignGameObject(string name, Vector3 newPosition)
+    void AssignGameObject(string name, Vector3 newPosition, Quaternion newRotation)
     {
         if(arObjectsToPlace != null)
         {
-            arObjects[name].SetActive(true);
-            arObjects[name].transform.position = newPosition;
-            arObjects[name].transform.localScale = scaleFactor;
-            foreach(GameObject go in arObjects.Values)
+            if (Vector3.Distance(arObjects[name].transform.position, Camera.current.transform.position) < 0.15)
             {
-                if(go.name != name)
+                arObjects[name].SetActive(false);
+            }
+            else
+            {
+                arObjects[name].SetActive(true);
+                arObjects[name].transform.position = newPosition;
+                arObjects[name].transform.rotation = newRotation;
+                arObjects[name].transform.localScale = scaleFactor;
+            }
+
+            foreach (GameObject go in arObjects.Values)
+            {
+                if (Vector3.Distance(go.transform.position, Camera.current.transform.position) < 0.15)
                 {
                     go.SetActive(false);
                 }
 
             }
+
         }
     }
 
