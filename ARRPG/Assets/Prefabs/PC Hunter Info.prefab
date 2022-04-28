@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &188257356265271282
+--- !u!1001 &1333793329477150653
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -21,7 +21,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5442296111841229529, guid: 1f13239fb3309e84c8048c57d12446a9, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 14.6
+      value: 10.5
       objectReference: {fileID: 0}
     - target: {fileID: 5442296111841229529, guid: 1f13239fb3309e84c8048c57d12446a9, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -73,11 +73,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5962719811697038137, guid: 1f13239fb3309e84c8048c57d12446a9, type: 3}
       propertyPath: m_Name
-      value: Goblin Info
+      value: PC Hunter Info
       objectReference: {fileID: 0}
     - target: {fileID: 5962719812810112973, guid: 1f13239fb3309e84c8048c57d12446a9, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 2
+      value: 2.5
       objectReference: {fileID: 0}
+    - target: {fileID: 8000706158387189526, guid: 1f13239fb3309e84c8048c57d12446a9, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 163166689ff620c4e88efa84af2d6f82, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f13239fb3309e84c8048c57d12446a9, type: 3}
