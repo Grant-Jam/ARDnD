@@ -45,3 +45,13 @@ MonoBehaviour:
     m_SpecifySize: 1
     m_Name: HunterARPrefab
     m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 4898246176875042111
+      m_GuidHigh: 8913161809677326734
+    m_SerializedTextureGuid:
+      m_GuidLow: 16961898633235889593
+      m_GuidHigh: 7470279232498715897
+    m_Size: {x: 0.1, y: 0.10332104}
+    m_SpecifySize: 1
+    m_Name: ground_test_mesh
+    m_Texture: {fileID: 0}

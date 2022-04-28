@@ -12,6 +12,8 @@ public class MultipleTrackedImagesManager : MonoBehaviour
 
     [SerializeField] private Vector3 scaleFactor = new Vector3(0.1f,0.1f,0.1f);
 
+    private bool terVis = false;
+
     [SerializeField] private Text imageTrackedText;
     [SerializeField] private Text imageTrackedText2;
 
@@ -72,16 +74,35 @@ public class MultipleTrackedImagesManager : MonoBehaviour
     {
         if(arObjectsToPlace != null)
         {
-            if (Vector3.Distance(arObjects[name].transform.position, Camera.current.transform.position) < 0.15)
+            if (Vector3.Distance(arObjects[name].transform.position, Camera.current.transform.position) < 0.1)
             {
                 arObjects[name].SetActive(false);
             }
+
+            // Find a way to lock object positions in world space when not being tracked
+
             else
             {
-                arObjects[name].SetActive(true);
-                arObjects[name].transform.position = newPosition;
-                arObjects[name].transform.rotation = newRotation;
-                arObjects[name].transform.localScale = scaleFactor;
+                if (arObjects[name].tag != "Environment")
+                {
+                    arObjects[name].SetActive(true);
+                    arObjects[name].transform.localScale = scaleFactor;
+                    arObjects[name].transform.position = newPosition;
+                    arObjects[name].transform.rotation = newRotation;
+                }
+                else
+                {
+                  /*if (terVis == false)
+                    {
+                        arObjects[name].transform.position = newPosition;
+                        terVis = true;
+                    }*/
+                    arObjects[name].transform.position = newPosition;   
+
+                    arObjects[name].SetActive(true);
+                    arObjects[name].transform.localScale = scaleFactor / 10;
+                }
+
             }
 
             foreach (GameObject go in arObjects.Values)

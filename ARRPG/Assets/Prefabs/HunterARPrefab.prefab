@@ -75,4 +75,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   infoCanvas: {fileID: 4628930641896387716, guid: e78bc13d48bfa364fa9acfd0751ad87f, type: 3}
-  hideDistance: 1
+  hideDistance: 0.5
