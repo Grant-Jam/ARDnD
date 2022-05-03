@@ -481,6 +481,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: female_genericMesh
       objectReference: {fileID: 0}
+    - target: {fileID: 2960395769364084781, guid: 487315f12771eb4459cdd41addea8922, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8267765250304752372, guid: 487315f12771eb4459cdd41addea8922, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -595,6 +599,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ground_test_mesh
       objectReference: {fileID: 0}
+    - target: {fileID: 5407176508873428761, guid: 1c6b485eaf904104eb27094384bbcf7e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5407176508873428762, guid: 1c6b485eaf904104eb27094384bbcf7e, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -698,3 +706,117 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 69a7ad039c2182d4593ce13d7a369b65, type: 3}
+--- !u!1001 &3400026823113526199
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3400026823799647005, guid: 3bd1522a1ec8fa04bb5f85bdc1740919, type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3400026823799647005, guid: 3bd1522a1ec8fa04bb5f85bdc1740919, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3400026823799647005, guid: 3bd1522a1ec8fa04bb5f85bdc1740919, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3400026823799647005, guid: 3bd1522a1ec8fa04bb5f85bdc1740919, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3400026823799647005, guid: 3bd1522a1ec8fa04bb5f85bdc1740919, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3400026823799647005, guid: 3bd1522a1ec8fa04bb5f85bdc1740919, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3400026823799647005, guid: 3bd1522a1ec8fa04bb5f85bdc1740919, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3400026823799647005, guid: 3bd1522a1ec8fa04bb5f85bdc1740919, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3400026823799647005, guid: 3bd1522a1ec8fa04bb5f85bdc1740919, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3400026823799647005, guid: 3bd1522a1ec8fa04bb5f85bdc1740919, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3400026823799647005, guid: 3bd1522a1ec8fa04bb5f85bdc1740919, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3400026823799647006, guid: 3bd1522a1ec8fa04bb5f85bdc1740919, type: 3}
+      propertyPath: m_Name
+      value: ground_model_tiled
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3bd1522a1ec8fa04bb5f85bdc1740919, type: 3}
+--- !u!1001 &5305555333836846544
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5305555332546798528, guid: ad27ba75e856f004794b004ab9d1d05d, type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5305555332546798528, guid: ad27ba75e856f004794b004ab9d1d05d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -50.26
+      objectReference: {fileID: 0}
+    - target: {fileID: 5305555332546798528, guid: ad27ba75e856f004794b004ab9d1d05d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5305555332546798528, guid: ad27ba75e856f004794b004ab9d1d05d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5305555332546798528, guid: ad27ba75e856f004794b004ab9d1d05d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5305555332546798528, guid: ad27ba75e856f004794b004ab9d1d05d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5305555332546798528, guid: ad27ba75e856f004794b004ab9d1d05d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5305555332546798528, guid: ad27ba75e856f004794b004ab9d1d05d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5305555332546798528, guid: ad27ba75e856f004794b004ab9d1d05d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5305555332546798528, guid: ad27ba75e856f004794b004ab9d1d05d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5305555332546798528, guid: ad27ba75e856f004794b004ab9d1d05d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5305555332546798559, guid: ad27ba75e856f004794b004ab9d1d05d, type: 3}
+      propertyPath: m_Name
+      value: ground_model_plain
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ad27ba75e856f004794b004ab9d1d05d, type: 3}
