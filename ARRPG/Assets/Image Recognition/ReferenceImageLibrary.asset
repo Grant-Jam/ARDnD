@@ -23,7 +23,7 @@ MonoBehaviour:
       m_GuidHigh: 3646057016340488539
     m_Size: {x: 0.1, y: 0.10332104}
     m_SpecifySize: 1
-    m_Name: deb_Goblin01
+    m_Name: GoblinARCharacter
     m_Texture: {fileID: 0}
   - m_SerializedGuid:
       m_GuidLow: 4943709773303447580
@@ -53,5 +53,5 @@ MonoBehaviour:
       m_GuidHigh: 7470279232498715897
     m_Size: {x: 0.1, y: 0.10332104}
     m_SpecifySize: 1
-    m_Name: ground_test_mesh
+    m_Name: ground_model_tiledPlain
     m_Texture: {fileID: 0}

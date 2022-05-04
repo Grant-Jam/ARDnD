@@ -12,7 +12,7 @@ public class MultipleTrackedImagesManager : MonoBehaviour
 
     [SerializeField] private Vector3 scaleFactor = new Vector3(0.1f,0.1f,0.1f);
 
-    private bool terVis = false;
+    //private bool terVis = false;
 
     [SerializeField] private Text imageTrackedText;
     [SerializeField] private Text imageTrackedText2;
@@ -20,6 +20,8 @@ public class MultipleTrackedImagesManager : MonoBehaviour
     private ARTrackedImageManager trackedImageManager;
 
     private Dictionary<string, GameObject> arObjects = new Dictionary<string, GameObject>();
+
+    private bool locked = false;
 
     private void Awake()
     {
@@ -85,22 +87,27 @@ public class MultipleTrackedImagesManager : MonoBehaviour
             {
                 if (arObjects[name].tag != "Environment")
                 {
-                    arObjects[name].SetActive(true);
-                    arObjects[name].transform.localScale = scaleFactor;
-                    arObjects[name].transform.position = newPosition;
-                    arObjects[name].transform.rotation = newRotation;
+                    if (locked == false)
+                    {
+                        arObjects[name].SetActive(true);
+                        arObjects[name].transform.localScale = scaleFactor / 5;
+                        arObjects[name].transform.position = newPosition;
+                        arObjects[name].transform.rotation = newRotation;
+                    }
                 }
                 else
                 {
-                  /*if (terVis == false)
+                    /*if (terVis == false)
+                      {
+                          arObjects[name].transform.position = newPosition;
+                          terVis = true;
+                      }*/
+                    if (locked == false)
                     {
                         arObjects[name].transform.position = newPosition;
-                        terVis = true;
-                    }*/
-                    arObjects[name].transform.position = newPosition;   
-
-                    arObjects[name].SetActive(true);
-                    arObjects[name].transform.localScale = scaleFactor / 10;
+                        arObjects[name].SetActive(true);
+                        arObjects[name].transform.localScale = scaleFactor / 15;
+                    }
                 }
 
             }
@@ -114,6 +121,20 @@ public class MultipleTrackedImagesManager : MonoBehaviour
 
             }
 
+        }
+    }
+
+    public void LockToggle()
+    {
+        if(locked == true)
+        {
+            locked = false;
+            imageTrackedText2.text = "Unlocked";
+        }
+        else
+        {
+            locked = true;
+            imageTrackedText2.text = "Locked";
         }
     }
 
