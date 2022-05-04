@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5305555332546798528}
   m_Layer: 0
   m_Name: ground_model_plain
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

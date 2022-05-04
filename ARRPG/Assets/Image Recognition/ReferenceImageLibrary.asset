@@ -33,7 +33,7 @@ MonoBehaviour:
       m_GuidHigh: 612206330568784938
     m_Size: {x: 0.1, y: 0.10332104}
     m_SpecifySize: 1
-    m_Name: WitchARPrefab
+    m_Name: WitchARCharacter
     m_Texture: {fileID: 0}
   - m_SerializedGuid:
       m_GuidLow: 5292107239922705949
@@ -43,7 +43,7 @@ MonoBehaviour:
       m_GuidHigh: 2694591262776698618
     m_Size: {x: 0.1, y: 0.10332104}
     m_SpecifySize: 1
-    m_Name: HunterARPrefab
+    m_Name: HunterARCharacter
     m_Texture: {fileID: 0}
   - m_SerializedGuid:
       m_GuidLow: 4898246176875042111
